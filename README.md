@@ -9,6 +9,7 @@ $ npm i digit-time-to-word --save
 ```
 ###### **In Node Js**
 ```javascript
+
 //load the digit time to word module
 const timeToWord = require('digit-time-to-word');
 // You can use console.log(timeToWord) to see all result
@@ -17,11 +18,14 @@ const timeToWord = require('digit-time-to-word');
 let date =  new Date();
 
 let timeInWord = timeToWord.getTimeInWord(date.getHours(),date.getMinutes());
-if(timeInWord.status){
-   console.log(`Hour : ${timeInWord.hour}  Minute : ${timeInWord.minute}  ===>  ${timeInWord.time}`);    
-}else{
-    console.log(timeInWord.error);
-}
+//
+console.log(timeInWord);
+
+// if(timeInWord.status){
+//    console.log(`Hour : ${timeInWord.hour}  Minute : ${timeInWord.minute}  ===>  ${timeInWord.time}`);    
+// }else{
+//     console.log(timeInWord.error);
+// } 
 
 ```
 
